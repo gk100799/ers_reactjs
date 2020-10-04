@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { withRouter } from 'react-router-dom'
 
 import Tab from './Tab'
 import './EventsUI.css'
@@ -8,9 +9,34 @@ function Tabs(props) {
     // let children = []
 
     const [activeTab, setActiveTab] = useState(props.children[0].props.label)
+    // const [activeTab, setActiveTab] = useState()
+
+    useEffect(() => {
+        switch(props.location.pathname) {
+            case "/" : 
+                setActiveTab("UPCOMING")
+                break;
+            case "/registered": 
+                setActiveTab("REGISTERED")
+                break;
+            case "/feedback": 
+                setActiveTab("FEEDBACK")
+                break;
+            default: 
+                setActiveTab("UPCOMING")
+        }
+        // } === "/" ? setActiveTab("UPCOMING") 
+        //     : props.location.pathname === "/registered" ? setActiveTab("REGISTERED") 
+        //     : props.location.pathname === "/feedback" ? setActiveTab("FEEDBACK") 
+    }, [props.location.pathname])
 
     const onClickTabItem = (tab) => {
-        setActiveTab(tab);
+        if(tab === "UPCOMING") {
+            props.history.push(`/`)
+        }else {
+            props.history.push(`/${tab.toLowerCase()}`)
+        }
+        // setActiveTab(tab);
     }
     
     const children = props.children
@@ -42,4 +68,4 @@ function Tabs(props) {
     )
 }
 
-export default Tabs
+export default withRouter(Tabs)

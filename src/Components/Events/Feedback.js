@@ -2,29 +2,20 @@ import React from 'react'
 
 import { Table, Popconfirm } from 'antd'
 
-function Registered() {
+function Feedback() {
 
     const columns = [
         { title: 'Event Name', dataIndex: 'name', key: 'name' },
-        { title: 'Registered On', dataIndex: 'date', key: 'date' },
-        { 
-            title: 'Details', 
-            dataIndex: 'details', 
-            key: 'details',
-            render: (text, record) =>
-            data.length >= 1 ? (
-                <a>View Details</a>
-            ) : null,
-        },
+        { title: 'Event Date', dataIndex: 'date', key: 'date' },
         {
             title: 'Action',
             dataIndex: '',
             key: 'x',
             render: (text, record) =>
             data.length >= 1 ? (
-                <Popconfirm title="Sure to Unregister?" onConfirm={() => this.handleDelete(record.key)}>
-                <a>Unregister</a>
-                </Popconfirm>
+                // <Popconfirm title="Sure to Unregister?" onConfirm={() => this.handleDelete(record.key)}>
+                <a onClick={() => this.handleDelete(record.key)} >Take Survey</a>
+                // </Popconfirm>
             ) : null,
         },
     ];
@@ -65,4 +56,4 @@ function Registered() {
 
 
 
-export default Registered
+export default Feedback
