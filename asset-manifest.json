@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ers_reactjs/static/css/main.3ce14239.chunk.css",
+    "main.js": "/ers_reactjs/static/js/main.15ab59bc.chunk.js",
+    "main.js.map": "/ers_reactjs/static/js/main.15ab59bc.chunk.js.map",
+    "runtime-main.js": "/ers_reactjs/static/js/runtime-main.5eafe757.js",
+    "runtime-main.js.map": "/ers_reactjs/static/js/runtime-main.5eafe757.js.map",
+    "static/css/2.220ccb42.chunk.css": "/ers_reactjs/static/css/2.220ccb42.chunk.css",
+    "static/js/2.35fcd9f7.chunk.js": "/ers_reactjs/static/js/2.35fcd9f7.chunk.js",
+    "static/js/2.35fcd9f7.chunk.js.map": "/ers_reactjs/static/js/2.35fcd9f7.chunk.js.map",
+    "index.html": "/ers_reactjs/index.html",
+    "precache-manifest.4576a7b0f1f0e794abc9d67e280c85ad.js": "/ers_reactjs/precache-manifest.4576a7b0f1f0e794abc9d67e280c85ad.js",
+    "service-worker.js": "/ers_reactjs/service-worker.js",
+    "static/css/2.220ccb42.chunk.css.map": "/ers_reactjs/static/css/2.220ccb42.chunk.css.map",
+    "static/css/main.3ce14239.chunk.css.map": "/ers_reactjs/static/css/main.3ce14239.chunk.css.map",
+    "static/js/2.35fcd9f7.chunk.js.LICENSE.txt": "/ers_reactjs/static/js/2.35fcd9f7.chunk.js.LICENSE.txt",
+    "static/media/EventsUI.css": "/ers_reactjs/static/media/bg-stud.3df43792.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5eafe757.js",
+    "static/css/2.220ccb42.chunk.css",
+    "static/js/2.35fcd9f7.chunk.js",
+    "static/css/main.3ce14239.chunk.css",
+    "static/js/main.15ab59bc.chunk.js"
+  ]
+}
